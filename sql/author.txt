@@ -1,0 +1,5 @@
+CREATE TABLE `bookstore`.`author` (
+  `id` INT NOT NULL,
+  `name` VARCHAR(50) NULL,
+  `birthday` VARCHAR(45) NULL,
+  PRIMARY KEY (`id`));

@@ -1,0 +1,8 @@
+CREATE TABLE `bookstore`.`users` (
+  `id` INT NOT NULL,
+  `email` VARCHAR(50) NOT NULL,
+  `password` VARCHAR(64) NOT NULL,
+  PRIMARY KEY (`id`));
+
+ALTER TABLE bookstore.users_roles 
+ADD FOREIGN KEY (user_id) REFERENCES bookstore.users(id);

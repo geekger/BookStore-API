@@ -1,0 +1,8 @@
+CREATE TABLE `bookstore`.`books` (
+  `isbn` VARCHAR(50) NOT NULL,
+  `title` VARCHAR(70) NULL,
+  `authors` JSON NULL,
+  `year` DATE NULL,
+  `price` DOUBLE NULL,
+  `genre` VARCHAR(50) NULL,
+  PRIMARY KEY (`isbn`));
